@@ -125,3 +125,8 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
+footer p {
+  /*I'm sure there's a better way to moving the line up a bit right?*/
+  margin-top: -10px;
+}
