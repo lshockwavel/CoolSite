@@ -1,0 +1,127 @@
+:root {
+  --cool-dark: #061130;
+  --cool-blue: #1C4BC4;
+  --cool-light: #F4F6F8;
+  --cool-yellow: #FAFD61;
+}
+
+/*We want all of the font to be set this style*/
+* {
+  font-family: Arial;
+}
+
+body {
+  background-color: var(--cool-dark);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /*This is just cover the top part? Not sure how this is preventing the bottom to be covered*/
+  min-height: 100vh;
+}
+
+head title {
+  /*Wanted to change the color on title for fun. Didn't work*/
+  color: cornflowerblue;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header {
+  background-color: var(--cool-dark);
+} */
+
+header img {
+  /* height: 3.5rem; */
+  height: 3.5rem;
+  padding: 15px;
+}
+
+header nav {
+  display: flex;
+  /* padding: 10px; */
+  /* justify-content: space-between; */
+  /* width: 10px; */
+  gap: 3rem;
+  margin: 2rem;
+  align-items: center;
+
+  /* color & text decoration didn't affect the text at this selector. 
+  Why? Was it due to to the img or something?*/
+
+  /* color: var(--cool-light);
+  text-decoration: none; */
+}
+
+header nav a {
+  color: var(--cool-light);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Button for Let's Chat*/
+header nav a button {
+  background-color: var(--cool-blue);
+  border: none;
+  border-radius: 5px;
+  color: var(--cool-light);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+
+  /*You need a cursor pointer for a button. Why? That doesn't make very much sense.*/
+  cursor: pointer;
+}
+
+
+/*Selectors for the Main part*/
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.about {
+  width: 50%;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+body main div.summary {
+  color: var(--cool-light);
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+}
+
+div div h3 {
+  color: var(--cool-yellow);
+}
+
+
+/*Links Selection*/
+
+div.links {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+
+  padding: 3rem;
+}
+
+
+/*footer selection*/
+
+footer {
+  background-color: var(--cool-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
