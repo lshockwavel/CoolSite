@@ -94,7 +94,7 @@ body main div.summary {
   padding: 5rem;
 }
 
-div div h3 {
+h3.service-title {
   color: var(--cool-yellow);
 }
 
@@ -119,7 +119,16 @@ footer {
   align-items: center;
 }
 
-footer p {
+footer {
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
   /*I'm sure there's a better way to moving the line up a bit right?*/
-  margin-top: -10px;
+  /* margin-top: -10px; */
 }
